@@ -11,6 +11,6 @@ $velos = getAllVelos($pdo);
     <div>
         <h3><?= htmlspecialchars($velo['name']) ?></h3>
         <p><?= $velo['price'] ?> € / jour</p>
-        <a href="reservation_form.php?id=<?= $velo['id'] ?>">Réserver</a>
+        <a href="reservation_form.php?id=<?= $velo['id'] ?>" class="btn">Réserver</a>
     </div>
 <?php endforeach; ?>
