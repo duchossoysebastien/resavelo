@@ -1,73 +1,124 @@
+/* Reset & font */
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
+    background: radial-gradient(circle at top, #1b0036, #000);
+    color: #fff;
+    min-height: 100vh;
 }
 
-.container {
+/* ------------------ HEADER ------------------ */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #12002b, #050014);
+    box-shadow: 0 0 15px rgba(255, 0, 90, 0.4);
+}
+
+.logo {
+    font-size: 60px;
+    color: #ff003c;
+    letter-spacing: 4px;
+    text-shadow:
+        0 0 5px #ff003c,
+        0 0 15px #ff003c,
+        0 0 30px #ff0055;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #00eaff;
+    font-style: italic;
+    font-size: 18px;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+/* ------------------ FORMULAIRE ------------------ */
+.form-container {
     width: 100%;
     max-width: 400px;
-    margin: 60px auto;
-    background-color: #ffffff;
+    margin: 40px auto;
+    background: linear-gradient(180deg, #12002b, #050014);
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow:
+        0 0 15px rgba(255, 0, 90, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #333;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: #555;
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff;
 }
 
 input[type="date"] {
     width: 100%;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: #1b0036;
+    color: #fff;
+    font-size: 14px;
 }
 
 input[type="date"]:focus {
     outline: none;
-    border-color: #2c7be5;
+    border-color: #ff003c;
+    box-shadow: 0 0 8px #ff003c;
 }
 
-.btn {
-    width: 100%;
+/* ------------------ BOUTON NÉON ------------------ */
+.btn-neon {
     padding: 12px;
-    background-color: #2c7be5;
+    background-color: transparent;
+    border: 2px solid #ff003c;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff003c;
 }
 
-.btn:hover {
-    background-color: #1a68d1;
+.btn-neon:hover {
+    background-color: #ff003c;
+    box-shadow:
+        0 0 10px #ff003c,
+        0 0 25px #ff003c,
+        0 0 50px #ff003c;
 }
 
+/* ------------------ LIEN RETOUR ------------------ */
 .back-link {
     display: block;
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
-    color: #2c7be5;
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff;
+}
+
+.back-link:hover {
+    text-decoration: underline;
 }
 
